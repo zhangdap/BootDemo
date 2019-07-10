@@ -1,0 +1,27 @@
+##配置启动端口号
+server:
+  port: 8080
+spring:
+  application:
+    name: shiro
+
+  datasource:
+    url: jdbc:mysql://www.lzsyfour.cn:3306/enceladus?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password:
+    driver-class-name: com.mysql.jdbc.Driver
+    ##配置JPA的相关信息
+  jpa:
+    database: mysql
+    showSql: true
+    hibernate:
+      ddlAuto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+        format_sql: true
+  mvc:
+    view:
+      prefix: /WEB-INF/view/
+      suffix: .jsp
+
