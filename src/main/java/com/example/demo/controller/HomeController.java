@@ -63,7 +63,7 @@ public class HomeController {
 
     @GetMapping(value = "/test")
     public Object test(@RequestParam(required = false, defaultValue = "zhangyong") String name) {
-
+        logger.info("this is a test message");
         logger.info(name);
         return userRepository.getabs(name);
     }
