@@ -1,1 +1,2 @@
 new publlic
+new class
