@@ -1,0 +1,2 @@
+new publlic
+new class
